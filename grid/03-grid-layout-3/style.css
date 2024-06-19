@@ -120,16 +120,22 @@ ul {
   justify-self: start;
 }
 
-
-.sidebar {
-  grid-area: 2 / 1 / 4 / 2;
-}
-
 .nav {
 
   grid-area: 2 / 2 / 3 / 3;
 
 }
+
+.nav > ul {
+  display: grid;
+  grid-template: 1fr / repeat(3, 1fr);
+}
+
+.sidebar {
+  grid-area: 2 / 1 / 4 / 2;
+}
+
+
 
 .article {
   grid-area: 3 / 2 / 4 / 3;
