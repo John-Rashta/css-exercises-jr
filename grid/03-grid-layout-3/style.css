@@ -96,7 +96,8 @@
 .container {
   display: grid;
   height: 100vh;
-  grid-template: 2fr 1fr 6fr 1fr / 1fr 4fr;
+  grid-template: 2fr 1fr 5fr 1fr / 1fr 4fr;
+  gap: 5px;
 }
 
 .header {
@@ -133,6 +134,13 @@ ul {
 
 .sidebar {
   grid-area: 2 / 1 / 4 / 2;
+  display: grid;
+  grid-template: repeat(4, 1fr) / 1fr;
+  gap:8%;
+}
+
+.sidebar > div {
+  align-content: center;
 }
 
 
@@ -145,6 +153,7 @@ ul {
 .footer {
   grid-area: 4 / 1 / 5 / 3;
 }
+
 
 
 
